@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LibreriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ProductoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Biblioteca">
           <Key>
             <PropertyRef Name="id" />
@@ -36,7 +36,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="LibreriaModelStoreContainer">
+        <EntityContainer Name="ProductoModelStoreContainer">
           <EntitySet Name="Biblioteca" EntityType="Self.Biblioteca" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Bibliotec__usuar__2E1BDC42" Association="Self.FK__Bibliotec__usuar__2E1BDC42">
@@ -48,7 +48,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="LibreriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="ProductoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Biblioteca">
           <Key>
             <PropertyRef Name="id" />
@@ -82,7 +82,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DCUEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ProductoEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bibliotecas" EntityType="Self.Biblioteca" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
           <AssociationSet Name="FK__Bibliotec__usuar__2E1BDC42" Association="Self.FK__Bibliotec__usuar__2E1BDC42">
@@ -95,9 +95,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="LibreriaModelStoreContainer" CdmEntityContainer="DCUEntities">
+        <EntityContainerMapping StorageEntityContainer="ProductoModelStoreContainer" CdmEntityContainer="ProductoEntities">
           <EntitySetMapping Name="Bibliotecas">
-            <EntityTypeMapping TypeName="LibreriaModel.Biblioteca">
+            <EntityTypeMapping TypeName="ProductoModel.Biblioteca">
               <MappingFragment StoreEntitySet="Biblioteca">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -108,7 +108,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Usuarios">
-            <EntityTypeMapping TypeName="LibreriaModel.Usuario">
+            <EntityTypeMapping TypeName="ProductoModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
