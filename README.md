@@ -10,7 +10,7 @@ El comando git init se utiliza para inicializar un nuevo repositorio de Git. Cua
 En Git, una rama es una línea independiente de desarrollo. Las ramas son útiles para trabajar en nuevas características, corregir errores o realizar experimentos sin afectar directamente la rama principal del proyecto.
 
 ## ¿Cómo saber en qué rama estoy en Git?
-Para saber en qué rama estás, puedes utilizar el comando git branch. El asterisco (*) antes del nombre de la rama actual indica en cuál estás trabajando.
+Para saber en qué rama nos encontramos, se puede utilizar el comando git branch. El asterisco (*) antes del nombre de la rama actual indica en cuál estás trabajando.
 
 ## ¿Quién creó Git?
 Git fue creado por Linus Torvalds, el mismo individuo que creó el kernel del sistema operativo Linux.
