@@ -13,10 +13,10 @@ namespace LibreriaFlow.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DCUEntities : DbContext
+    public partial class ProductoEntities : DbContext
     {
-        public DCUEntities()
-            : base("name=DCUEntities")
+        public ProductoEntities()
+            : base("name=ProductoEntities")
         {
         }
     
